@@ -10,12 +10,13 @@ export const Container = styled.SafeAreaView`
 export const Content = styled.View`
   flex: 1;
   align-items: center;
-  padding: ${ch(15)}px ${cw(30)}px;
+  padding: ${ch(15)}px ${cw(30)}px ${ch(100)}px;
 `;
 
 export const Illustration = styled.Image.attrs({
   source: Image,
+  resizeMode: 'contain',
 })`
-  width: 50%;
-  height: 30%;
+  width: ${cw(300)}px;
+  height: ${ch(150)}px;
 `;
